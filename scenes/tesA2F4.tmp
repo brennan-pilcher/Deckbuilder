@@ -3,14 +3,12 @@
 [ext_resource type="Script" path="res://scripts/test_card.gd" id="1_4wx3g"]
 [ext_resource type="Texture2D" uid="uid://cox58p5kyc8ed" path="res://assets/Example Card.png" id="2_dgx0x"]
 
-[node name="Card" type="Node" node_paths=PackedStringArray("card", "cardImage")]
+[node name="Card" type="Area2D" node_paths=PackedStringArray("card", "cardImage")]
 script = ExtResource("1_4wx3g")
 card = NodePath("card")
 cardImage = NodePath("card image")
 
 [node name="card image" type="Sprite2D" parent="."]
-position = Vector2(64, 112)
 texture = ExtResource("2_dgx0x")
 
 [node name="card" type="Node2D" parent="."]
-position = Vector2(70, 114)
